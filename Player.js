@@ -20,8 +20,6 @@ function Player(){
         if(this.currentFrame >= 24){
             this.currentFrame = 1;
         }
-
-        console.log(this.currentFrame);
     }
 
     this.GameBounds = function(){

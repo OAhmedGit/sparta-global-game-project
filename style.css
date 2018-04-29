@@ -11,10 +11,7 @@
     z-index: 1;
     width: 48px;
     height: 64px;
-    /* background-image: url("images/up-anim/up-1.png"); */
     position: absolute;
-    /* background-size: contain;
-    background-repeat: no-repeat; */
 }
 
 .bush{
