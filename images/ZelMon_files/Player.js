@@ -1,4 +1,5 @@
 function Player(){
+    this.window = document.getElementById("game-window");
     this.player = document.getElementById("player");
     this.health = 100;
     this.damage = 30;
@@ -15,8 +16,6 @@ function Player(){
     this.wallManager = new WallManager();
     this.randomEnemy;
     this.colliding = false;
-    this.showGame = true;
-    this.showFight = false;
 
     this.PlayAnimation = function(){
         if(this.currentFrame < 24){
@@ -143,18 +142,9 @@ function Player(){
 
     this.CollidingWithEnemy = function(){
         if(this.randomEnemy == 1 && this.colliding == true){
-            this.showGame = false;
-            this.showFight = true;
-        } 
-    }
-
-    this.SwitchScreenBooleans = function(){
-        if(this.showGame == true && this.showFight == false){
-            gameScreen.style.display = "block";
-            fightScreen.style.display = "none";
-        } else if(this.showGame == false && this.showFight == true){
-            gameScreen.style.display = "none";
-            fightScreen.style.display = "block";
+            setTimeout(function(){
+                window.location = "fight.html"
+            }, 1000);
         }
     }
 

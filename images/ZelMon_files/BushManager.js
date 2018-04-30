@@ -29,6 +29,10 @@ function BushManager(){
     this.bushesArray.push(new Bushes(350, 460));
     this.bushesArray.push(new Bushes(350, 490));
     
+    this.bushesArray.push(new Bushes(800, 400));
+    this.bushesArray.push(new Bushes(800, 430));
+    this.bushesArray.push(new Bushes(800, 460));
+    this.bushesArray.push(new Bushes(800, 490));
     this.bushesArray.push(new Bushes(850, 400));
     this.bushesArray.push(new Bushes(850, 430));
     this.bushesArray.push(new Bushes(850, 460));
@@ -49,10 +53,6 @@ function BushManager(){
     this.bushesArray.push(new Bushes(1050, 430));
     this.bushesArray.push(new Bushes(1050, 460));
     this.bushesArray.push(new Bushes(1050, 490));
-    this.bushesArray.push(new Bushes(1100, 400));
-    this.bushesArray.push(new Bushes(1100, 430));
-    this.bushesArray.push(new Bushes(1100, 460));
-    this.bushesArray.push(new Bushes(1100, 490));
     
     this.bushesArray.push(new Bushes(100, 100));
     this.bushesArray.push(new Bushes(100, 130));
@@ -81,6 +81,6 @@ function BushManager(){
     this.bushesArray.push(new Bushes(1050, 190));
 
     this.randomEnemyBush = function(){
-        return Math.floor(Math.random()*5)+1;
+        return Math.floor(Math.random()*10)+1;
     }
 }
