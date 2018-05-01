@@ -4,7 +4,7 @@
     position: relative;
     background-image: url("images/grassbg2.jpg");
     margin: auto;
-    z-index: 0;
+    z-index: -1;
 }
 
 #player{
@@ -21,6 +21,15 @@
     position: absolute;
 }
 
+.enemy{
+    z-index: -1;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-content: center;
+}
 .bush{
     z-index: 0;
     width: 50px;
@@ -55,6 +64,16 @@
     border: solid black 1px;
 }
 
+#fight-window{
+    width: 1300px;
+    height: 700px;
+    position: relative;
+    background-image: url("images/bg.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
 #player-fight{
     left: 200px;
     top: 320px;
@@ -65,24 +84,74 @@
     position:absolute;
 }
 
-#enemy{
+#enemy-fight{
     left: 800px;
     top: 500px;
     width: 250px;
     height: 200px;
-    background-image: url("images/Jigglypuff.gif");
+    /* background-image: url("images/Jigglypuff.gif"); */
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     border: none;
 }
 
-#fight-window{
-    width: 1300px;
-    height: 700px;
-    position: relative;
-    background-image: url("images/bg.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: auto;
+#controls{
+    left: 0;
+    top: 700px;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    border: green solid 1px;
 }
+
+.attackButton{
+    width: 50%;
+    height: 50%;
+    float: left;
+    position: relative;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.attackButton:hover{
+    background-color: darkgrey;
+    font-size: 20px;
+}
+
+.health-bar{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+    background: #ddd;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: absolute;
+  }
+
+  .bar {
+    background: #c54;
+    width: 100%;
+    height: 10px;
+    position: relative;
+    
+    transition: width .5s linear;
+  }
+
+  #health-bar-enemy{
+      left: 600px;
+      top: 400px;
+  }
+  #health-bar-player{
+      left: 200px;
+      top: 300px;
+  }
+
+  #restartButton{
+      width: 100%;
+      height: 30px;
+  }
+

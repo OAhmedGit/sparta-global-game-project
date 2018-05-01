@@ -11,7 +11,7 @@ function Bushes (posX, posY){
     this.bushArray.push(this.bush);
 
     for(var i = 0; i < this.bushArray.length; i++){
-        this.bushArray[i].style.left = posX + 'px';
-        this.bushArray[i].style.top = posY + 'px';
+        this.bushArray[i].style.left = this.posX + 'px';
+        this.bushArray[i].style.top = this.posY + 'px';
     }
 }

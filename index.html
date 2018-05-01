@@ -16,9 +16,30 @@
 
         <div id="fight-window">
             <img id="player-fight"></img>
-            <div id="enemy"></div>
+            <div id="enemy-fight"></div>
+            <div id="controls">
+                <button id="attack1Button" class="attackButton">Attack1</button>
+                <button id="attack2Button" class="attackButton">Attack2</button>
+                <button id="attack3Button" class="attackButton">Attack3</button>
+                <button id="attack4Button" class="attackButton">Attack4</button>
+            </div>
+
+            <div class="health-bar" id="health-bar-player" data-total="1000" data-value="1000">
+                <div class="bar"id="bar-player"></div>            
+            </div>
+
+            <div class="health-bar" id="health-bar-enemy" data-total="1000" data-value="1000">
+                <div class="bar" id="bar-enemy"></div>  
+            </div>
         </div>
 
+        <div id="dead-window">
+            <h1>Dead</h1>
+            <button id="restartButton">Restart</button>
+        </div>
+
+        <script src="Enemy.js"></script>
+        <script src="EnemyManager.js"></script>
         <script src="WallManager.js"></script>
         <script src="Wall.js"></script>
         <script src="TreeManager.js"></script>
