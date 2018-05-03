@@ -7,6 +7,26 @@
     z-index: -1;
 }
 
+#dead-window{
+    width: 1300px;
+    height: 700px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#win-window{
+    width: 1300px;
+    height: 700px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
 #player{
     z-index: 2;
     width: 48px;
@@ -19,6 +39,15 @@
     width: 192px;
     height: 128px;
     position: absolute;
+}
+
+.heart{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("images/heart.png");
 }
 
 .enemy{
@@ -70,6 +99,7 @@
     position: relative;
     background-image: url("images/bg.gif");
     background-repeat: no-repeat;
+    color: white;
     background-size: cover;
     margin: auto;
 }
@@ -130,28 +160,86 @@
     -moz-border-radius: 5px;
     border-radius: 5px;
     position: absolute;
-  }
+    }
 
-  .bar {
+.bar {
     background: #c54;
     width: 100%;
     height: 10px;
     position: relative;
-    
     transition: width .5s linear;
-  }
+}
 
-  #health-bar-enemy{
-      left: 600px;
-      top: 400px;
-  }
-  #health-bar-player{
-      left: 200px;
-      top: 300px;
-  }
+#health-bar-enemy{
+    left: 800px;
+    top: 300px;
+}
 
-  #restartButton{
-      width: 100%;
-      height: 30px;
-  }
+#health-bar-player{
+    left: 200px;
+    top: 300px;
+}
+#health-bar-player-gamewindow{
+    left: 200px;
+    top: 300px;
+}
+
+
+.button{
+    width: 200px;
+    height: 70px;
+    border-radius: 12px;
+    font-size: 20px;
+    margin: 30px auto;
+}
+
+.heart{
+    z-index: -1;
+}
+
+.start-screen{
+    text-align: center;
+    background-color: black;
+    font-family: sans-serif;
+    width: 1000px;
+    height: 600px;
+    margin: 20px auto;
+    position: relative;
+    color: white;
+    line-height: 25px;
+}
+
+.end-screen-img{
+    margin: 100px auto 0 auto;
+}
+
+body{
+    background-color: black;
+}
+
+.heart-indicator{
+    width: 50px;
+    height: 50px;
+    background-image: url("images/potion.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+#heart-indicator-1{
+    top: 0;
+    left: 0;
+}
+#heart-indicator-2{
+    top: 0;
+    left: 70px;
+}
+
+#win-image{
+    width: 300px;
+    height: 300px;
+}
+
+
+
 
