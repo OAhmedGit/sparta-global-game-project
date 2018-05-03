@@ -48,7 +48,7 @@ for(var i = 0; i < attackButtons.length; i++){
             setTimeout(function(){
                 player.turn = 1;
                 player.EnemyAttack()
-            }, 1000);
+            }, 2000);
         }
     });
 }
