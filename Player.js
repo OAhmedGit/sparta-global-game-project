@@ -300,7 +300,7 @@ function Player(){
         if(this.healthBarPlayer.dataset.value <= 0){
 
             this.deathDelay--;
-            
+
             $("#player-fight").fadeOut(1500, function(){
             });
 
