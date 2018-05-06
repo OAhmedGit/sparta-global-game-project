@@ -239,7 +239,7 @@ function Player(){
         if(this.turn == 1){
             this.valPlayer = this.healthBarPlayer.dataset.value;
             this.totalPlayer = this.healthBarPlayer.dataset.total;
-            this.enemyDamage = Math.floor(Math.random()*200)+100;
+            this.enemyDamage = Math.floor(Math.random()*100)+50;
             this.newValPlayer = this.valPlayer - this.enemyDamage;
             this.barWidthPlayer = (this.newValPlayer / this.totalPlayer) * 100;
             this.healthBarPlayer.dataset.value = this.newValPlayer;
