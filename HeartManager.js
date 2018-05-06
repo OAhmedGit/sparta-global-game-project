@@ -1,3 +1,4 @@
+//HeartManager object responsible for specifying the position and id of the heart
 function HeartManager(){
 
     this.heartArray = [];

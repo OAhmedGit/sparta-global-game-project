@@ -1,3 +1,4 @@
+//Wall object which sets the position of the walls passed from the WallManager object.
 function Wall(posX, posY){
 
     this.posX = posX;

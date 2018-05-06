@@ -1,5 +1,5 @@
+//Tree object which sets the position of the trees in the level passed from the TreeManager object.
 function Tree (posX, posY){
-
     this.posX = posX;
     this.posY = posY;
 

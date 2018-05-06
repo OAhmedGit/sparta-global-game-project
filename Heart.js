@@ -1,3 +1,4 @@
+//Heart object responsible for setting the position and id of the heart passed from the HeartManager object.
 function Heart (posX, posY, id){
 
     this.posX = posX;

@@ -1,3 +1,4 @@
+//Bush Manager object which is responsible for specifying the positions of the bushes.
 function BushManager(){
     
     this.randomEnemy = 0;
@@ -79,8 +80,4 @@ function BushManager(){
     this.bushesArray.push(new Bushes(1050, 130));
     this.bushesArray.push(new Bushes(1050, 160));
     this.bushesArray.push(new Bushes(1050, 190));
-
-    this.randomEnemyBush = function(){
-        return Math.floor(Math.random()*5)+1;
-    }
 }

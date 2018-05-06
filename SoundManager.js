@@ -1,3 +1,4 @@
+//SoundManager object which specifies the source and volume of each sound.
 function SoundManager(){
     this.backgroundMusic = new Sound("sounds/gameSound.mp3", 0.2);
     this.mainMenuMusic = new Sound("sounds/mainSound.mp3", 1);

@@ -1,4 +1,4 @@
-//Bushes object responsible for setting the position of the bushes in the level using the object constructor.
+//Bushes object responsible for setting the position of the bushes set by the bush manager in the level using the object constructor.
 function Bushes (posX, posY){
 
     this.posX = posX;

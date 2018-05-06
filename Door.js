@@ -1,3 +1,4 @@
+//Door object responsible for setting the position of the door in the level.
 function Door(posX, posY){
 
     this.posX = posX;

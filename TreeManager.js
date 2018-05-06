@@ -1,3 +1,4 @@
+//TreeManager object which specifies the position of the trees in the game.
 function TreeManager(){
 
     this.treeArray = [];
