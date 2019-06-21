@@ -2,21 +2,74 @@
 
 <html>
     <head>
-        <title>ZelMon</title>
+        <title>Hyrule Hunt</title>
         
         <link rel="stylesheet" href="style.css">
-        
     </head>
 
     <body>
-        <div id="game-window">
-            <img id="player"></img>
-        </div>
 
         
+
+        <div id="game-window">
+            <img id="player"></img>
+            <img id="door"></img>
+        </div>
+
+        <div id="fight-window">
+            <img id="player-fight"></img>
+            <div id="enemy-fight"></div>
+            <div class="heart-indicator" id="heart-indicator-1"></div>
+            <div class="heart-indicator" id="heart-indicator-2"></div>
+            <div id="controls">
+                <button id="attack1Button" class="attackButton">Standing Slash - 100 Damage</button>
+                <button id="attack2Button" class="attackButton">Double Hand Slash - 200 Damage</button>
+                <button id="attack3Button" class="attackButton">Super Strike - 300 Damage</button>
+                <button id="heal" class="attackButton">Heal</button>
+            </div>
+
+            <div class="health-bar" id="health-bar-player" data-total="1000" data-value="1000">
+                <div class="bar"id="bar-player"></div>            
+            </div>
+
+            <div class="health-bar" id="health-bar-enemy" data-total="1000" data-value="1000">
+                <div class="bar" id="bar-enemy"></div>  
+            </div>
+        </div>
+
+        <div id="dead-window">
+            <img src="images/lose.png" alt="" class="end-screen-img">
+            <br>
+            <button class="button restartButton">Restart</button>
+            <br>
+            <button class="button goToMainMenu">Main Menu</button>
+        </div>
+
+        <div id="win-window">
+            <img src="images/win.png" alt="" class="end-screen-img">
+            <br>
+            <img src="images/winImage.png" alt="" id="win-image">
+            <br>
+            <button class="button restartButton">Restart</button>
+            <br>
+            <button class="button goToMainMenu">Main Menu</button>
+        </div>
+        
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="Sound.js"></script>
+        <script src="SoundManager.js"></script>
+        <script src="Heart.js"></script>
+        <script src="HeartManager.js"></script>
+        <script src="Enemy.js"></script>
+        <script src="EnemyManager.js"></script>
+        <script src="WallManager.js"></script>
+        <script src="Wall.js"></script>
+        <script src="TreeManager.js"></script>
+        <script src="Tree.js"></script>
+        <script src="BushManager.js"></script>
         <script src="Bushes.js"></script>
+        <script src="Door.js"></script>
         <script src="Player.js"></script>
         <script src="Game.js"></script>
-        
     </body>
 </html>

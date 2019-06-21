@@ -1,17 +1,18 @@
+//Bushes object responsible for setting the position of the bushes set by the bush manager in the level using the object constructor.
 function Bushes (posX, posY){
 
     this.posX = posX;
     this.posY = posY;
 
-    var bushArray = [];
+    this.bushArray = [];
 
-    var bush = document.createElement('div');
-    bush.className = "bush";
-    document.getElementById('game-window').appendChild(bush);
-    bushArray.push(bush);
+    this.bush = document.createElement('div');
+    this.bush.className = "bush";
+    document.getElementById('game-window').appendChild(this.bush);
+    this.bushArray.push(this.bush);
 
-    for(var i = 0; i < bushArray.length; i++){
-        bushArray[i].style.left = posX + 'px';
-        bushArray[i].style.top = posY + 'px';
+    for(var i = 0; i < this.bushArray.length; i++){
+        this.bushArray[i].style.left = this.posX + 'px';
+        this.bushArray[i].style.top = this.posY + 'px';
     }
 }

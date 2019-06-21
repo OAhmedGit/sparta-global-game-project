@@ -2,29 +2,244 @@
     width: 1300px;
     height: 700px;
     position: relative;
-    background-image: url("images/grassbg.jpg");
+    background-image: url("images/grassbg2.jpg");
     margin: auto;
-    z-index: 0;
+    z-index: -1;
+}
+
+#dead-window{
+    width: 1300px;
+    height: 700px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#win-window{
+    width: 1300px;
+    height: 700px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    color: white;
 }
 
 #player{
-    z-index: 1;
+    z-index: 2;
     width: 48px;
     height: 64px;
-    /* background-image: url("images/up-anim/up-1.png"); */
     position: absolute;
-    /* background-size: contain;
-    background-repeat: no-repeat; */
 }
 
-.bush{
-    z-index: 2;
-    width: 50px;
-    height: 50px;
+#door{
+    z-index: 1;
+    width: 192px;
+    height: 128px;
     position: absolute;
-    background-image: url("images/bush.png");
+}
+
+.heart{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("images/heart.png");
+}
+
+.enemy{
+    z-index: -1;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-content: center;
+}
+.bush{
+    z-index: 0;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    background-image: url("images/shrub.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-content: center;
+}
+
+.tree{
+    z-index: 1;
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    background-image: url("images/tree.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-content: center;
+}
+
+.wall{
+    z-index: 0;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    background-image: url("images/wall.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-content: center;
     border: solid black 1px;
 }
+
+#fight-window{
+    width: 1300px;
+    height: 700px;
+    position: relative;
+    background-image: url("images/bg.gif");
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+    margin: auto;
+}
+
+#player-fight{
+    left: 200px;
+    top: 320px;
+    width: 250px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+}
+
+#enemy-fight{
+    left: 800px;
+    top: 500px;
+    width: 250px;
+    height: 200px;
+    /* background-image: url("images/Jigglypuff.gif"); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    border: none;
+}
+
+#controls{
+    left: 0;
+    top: 700px;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    border: green solid 1px;
+}
+
+.attackButton{
+    width: 50%;
+    height: 50%;
+    float: left;
+    position: relative;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.attackButton:hover{
+    background-color: darkgrey;
+    font-size: 20px;
+}
+
+.health-bar{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+    background: #ddd;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: absolute;
+    }
+
+.bar {
+    background: #c54;
+    width: 100%;
+    height: 10px;
+    position: relative;
+    transition: width .5s linear;
+}
+
+#health-bar-enemy{
+    left: 800px;
+    top: 300px;
+}
+
+#health-bar-player{
+    left: 200px;
+    top: 300px;
+}
+#health-bar-player-gamewindow{
+    left: 200px;
+    top: 300px;
+}
+
+
+.button{
+    width: 200px;
+    height: 70px;
+    border-radius: 12px;
+    font-size: 20px;
+    margin: 30px auto;
+}
+
+.heart{
+    z-index: -1;
+}
+
+.start-screen{
+    text-align: center;
+    background-color: black;
+    font-family: sans-serif;
+    width: 1000px;
+    height: 600px;
+    margin: 20px auto;
+    position: relative;
+    color: white;
+    line-height: 25px;
+}
+
+.end-screen-img{
+    margin: 100px auto 0 auto;
+}
+
+body{
+    background-color: black;
+}
+
+.heart-indicator{
+    width: 50px;
+    height: 50px;
+    background-image: url("images/potion.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+#heart-indicator-1{
+    top: 0;
+    left: 0;
+}
+#heart-indicator-2{
+    top: 0;
+    left: 70px;
+}
+
+#win-image{
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
